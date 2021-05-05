@@ -53,6 +53,7 @@ public class SoilPreference {
         }
     }
 
+    // called from main
     public static void initializeSoilList() {
         soilTypeList.add("acidic");
         soilTypeList.add("alkaline");

@@ -28,6 +28,7 @@ public class SunPreference {
         this.sunlight3 = sunlight3;
     }
 
+    // called from main
     public static void initializeSunlightList() {
         sunlightPreferenceList.add("Full Sun");
         sunlightPreferenceList.add("Part Sun");

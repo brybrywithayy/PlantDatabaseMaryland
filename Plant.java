@@ -1,6 +1,8 @@
 package marylandplants;
 
-public class Plant {
+import java.io.Serializable;
+
+public class Plant implements Serializable, FileReadWrite {
     private String species;
     private String genus;
     private String variety;
@@ -14,5 +16,9 @@ public class Plant {
         this.genus = genus;
         this.variety = variety;
         this.size = size;
+    }
+
+    private Plant importPlants(String filePath) {
+        // read from file and run through constructor, then dump in List
     }
 }
