@@ -1,11 +1,11 @@
-package marylandplants;
+package com.gainsay;
 
 import java.io.*;
 
 public interface FileReadWrite {
 
     // read back object from data file
-    static Object readDataFromFile(String filePath) {
+    default Object readDataFromFile(String filePath) {
         try {
             FileInputStream fileIn = new FileInputStream(filePath);
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
@@ -20,7 +20,7 @@ public interface FileReadWrite {
     }
 
     // writing object to data file
-    static void writeDataToFile(Object object, String filePath) {
+    default void writeDataToFile(Object object, String filePath) {
         try {
             FileOutputStream fileOut = new FileOutputStream(filePath);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);

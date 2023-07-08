@@ -1,4 +1,4 @@
-package marylandplants;
+package com.gainsay;
 
 public class PlantSize {
     // base measurements are in cm

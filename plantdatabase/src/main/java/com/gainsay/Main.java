@@ -1,4 +1,4 @@
-package marylandplants;
+package com.gainsay;
 
 public class Main {
 

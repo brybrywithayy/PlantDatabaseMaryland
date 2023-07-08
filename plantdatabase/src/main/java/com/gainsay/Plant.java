@@ -1,4 +1,4 @@
-package marylandplants;
+package com.gainsay;
 
 import java.io.Serializable;
 
